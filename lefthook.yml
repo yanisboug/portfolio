@@ -1,0 +1,10 @@
+pre-commit:
+  commands:
+    biome:
+      run: npx biome check --write .
+      stage_fixed: true
+
+pre-push:
+  commands:
+    ci:
+      run: npm run ci
